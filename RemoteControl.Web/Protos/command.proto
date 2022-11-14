@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "RemoteControl.Web";
+
+package command;
+
+service Command {
+  rpc InvokeCommand (CommandRequest) returns (CommandReply);
+}
+
+message CommandRequest {
+  string name = 1;
+}
+
+message CommandReply {
+  string response = 1;
+}
