@@ -14,7 +14,7 @@ namespace RemoteControl.Web.Handlers
             this.hubContext = hubContext;
         }
 
-        public async Task SendRemoteCommandAsync(CommandType commandType, string argument)
+        public async Task SendRemoteCommandAsync(CommandType commandType, string argument, bool force)
         {
             if (argument == null)
                 throw new ArgumentNullException(nameof(argument));

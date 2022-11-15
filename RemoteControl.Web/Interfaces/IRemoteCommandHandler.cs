@@ -4,6 +4,6 @@ namespace RemoteControl.Web.Interfaces
 {
     public interface IRemoteCommandHandler
     {
-        Task SendRemoteCommandAsync(CommandType commandType, string argument);
+        Task SendRemoteCommandAsync(CommandType commandType, string argument, bool force);
     }
 }
